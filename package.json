@@ -17,6 +17,7 @@
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "solid-start-node": "^0.3.10",
+    "solid-start-vercel": "^0.3.10",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
@@ -27,12 +28,12 @@
     "@solidjs/router": "^0.8.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "intl-messageformat": "10.5.4",
     "solid-icons": "^1.1.0",
     "solid-js": "^1.8.5",
     "solid-start": "^0.3.10",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7",
-    "intl-messageformat": "10.5.4"
+    "tailwindcss-animate": "^1.0.7"
   },
   "engines": {
     "node": "18"
