@@ -16,7 +16,7 @@ import {
 
 import { ColorModeProvider, ColorModeScript, cookieStorageManagerSSR } from "@kobalte/core"
 
-import { Navbar } from "~/components/navbar"
+import { Sidebar } from "~/components/sidebar"
 
 import "./root.css"
 
@@ -40,7 +40,7 @@ export default function Root() {
           <Suspense>
             <ColorModeProvider storageManager={storageManager}>
               <main class="flex">
-                <Navbar />
+                <Sidebar />
                 <Routes>
                   <FileRoutes />
                 </Routes>
