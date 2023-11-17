@@ -1,0 +1,11 @@
+// vite.config.ts
+import { defineConfig } from "file:///C:/workspace_web/solid-dashboard/node_modules/.pnpm/vite@4.5.0/node_modules/vite/dist/node/index.js";
+import solid from "file:///C:/workspace_web/solid-dashboard/node_modules/.pnpm/solid-start@0.3.10_@solidjs+meta@0.29.1_@solidjs+r_xy5yyyyi6aaf54vbkzcn4deuyu/node_modules/solid-start/vite/plugin.js";
+import vercel from "file:///C:/workspace_web/solid-dashboard/node_modules/.pnpm/solid-start-vercel@0.3.10_solid-start@0.3.10_vite@4.5.0/node_modules/solid-start-vercel/index.js";
+var vite_config_default = defineConfig({
+  plugins: [solid({ adapter: vercel() })]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFx3b3Jrc3BhY2Vfd2ViXFxcXHNvbGlkLWRhc2hib2FyZFwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiQzpcXFxcd29ya3NwYWNlX3dlYlxcXFxzb2xpZC1kYXNoYm9hcmRcXFxcdml0ZS5jb25maWcudHNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL0M6L3dvcmtzcGFjZV93ZWIvc29saWQtZGFzaGJvYXJkL3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSBcInZpdGVcIlxyXG5cclxuaW1wb3J0IHNvbGlkIGZyb20gXCJzb2xpZC1zdGFydC92aXRlXCJcclxuaW1wb3J0IHZlcmNlbCBmcm9tIFwic29saWQtc3RhcnQtdmVyY2VsXCJcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XHJcbiAgcGx1Z2luczogW3NvbGlkKHsgYWRhcHRlcjogdmVyY2VsKCkgfSldXHJcbn0pXHJcbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBd1IsU0FBUyxvQkFBb0I7QUFFclQsT0FBTyxXQUFXO0FBQ2xCLE9BQU8sWUFBWTtBQUVuQixJQUFPLHNCQUFRLGFBQWE7QUFBQSxFQUMxQixTQUFTLENBQUMsTUFBTSxFQUFFLFNBQVMsT0FBTyxFQUFFLENBQUMsQ0FBQztBQUN4QyxDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=
