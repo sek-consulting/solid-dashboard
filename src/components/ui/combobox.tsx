@@ -74,7 +74,7 @@ const ComboboxHiddenSelect = ComboboxPrimitive.HiddenSelect
 const ComboboxTrigger: Component<ComboboxPrimitive.ComboboxTriggerProps> = (props) => {
   const [, rest] = splitProps(props, ["class", "children"])
   return (
-    <ComboboxPrimitive.Trigger class={cn("h-4 w-4 opacity-50", props.class)} {...rest}>
+    <ComboboxPrimitive.Trigger class={cn("size-4 opacity-50", props.class)} {...rest}>
       <ComboboxPrimitive.Icon>{props.children ?? <TbSelector />}</ComboboxPrimitive.Icon>
     </ComboboxPrimitive.Trigger>
   )

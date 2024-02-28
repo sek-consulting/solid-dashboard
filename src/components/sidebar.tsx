@@ -1,5 +1,5 @@
 import type { ComponentProps } from "solid-js"
-import { For, Show, createSignal, splitProps } from "solid-js"
+import { createSignal, For, Show, splitProps } from "solid-js"
 
 import type { IconTypes } from "solid-icons"
 import {
@@ -12,9 +12,9 @@ import {
   TbPresentation
 } from "solid-icons/tb"
 
-import { buttonVariants } from "./ui/button"
-import { Separator } from "./ui/separator"
 import { ModeToggle } from "~/components/mode-toggle"
+import { buttonVariants } from "~/components/ui/button"
+import { Separator } from "~/components/ui/separator"
 import { Toggle } from "~/components/ui/toggle"
 import { cn } from "~/lib/utils"
 
@@ -52,7 +52,7 @@ export function Sidebar(props: ComponentProps<"aside">) {
   return (
     <aside
       class={cn(
-        "group flex min-h-screen w-14 flex-col justify-between transition-size duration-300 aria-expanded:w-64",
+        "transition-size group flex min-h-screen w-14 flex-col justify-between duration-300 aria-expanded:w-64",
         props.class
       )}
       {...rest}
@@ -60,7 +60,7 @@ export function Sidebar(props: ComponentProps<"aside">) {
     >
       <div class={cn("py-4", expanded() && "px-4")}>
         <div class={cn("flex items-center justify-center")}>
-          <img src="logo.svg" class={cn("h-6 w-6", expanded() && "mr-2")} />
+          <img src="logo.svg" class={cn("size-6", expanded() && "mr-2")} />
           <span class={cn("font-semibold tracking-tight", !expanded() && "hidden")}> COMPANY</span>
         </div>
         <For each={NAV}>
@@ -80,7 +80,7 @@ export function Sidebar(props: ComponentProps<"aside">) {
                   {(item) => (
                     <a class={cn(buttonVariants({ variant: "ghost" }), "justify-start")}>
                       <item.icon
-                        class={cn("h-5 w-5 transition-spacing duration-300", expanded() && "mr-2")}
+                        class={cn("transition-spacing size-5 duration-300", expanded() && "mr-2")}
                       />{" "}
                       <span class={cn(!expanded() && "hidden")}>{item.label}</span>
                     </a>
@@ -102,8 +102,8 @@ export function Sidebar(props: ComponentProps<"aside">) {
         <Separator orientation={expanded() ? "vertical" : "horizontal"} />
         <Toggle pressed={expanded()} onChange={setExpanded}>
           {(state) => (
-            <Show when={state.pressed()} fallback={<TbLayoutSidebarLeftExpand class="h-5 w-5" />}>
-              <TbLayoutSidebarLeftCollapse class="h-5 w-5" />
+            <Show when={state.pressed()} fallback={<TbLayoutSidebarLeftExpand class="size-5" />}>
+              <TbLayoutSidebarLeftCollapse class="size-5" />
             </Show>
           )}
         </Toggle>
